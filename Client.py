@@ -1,8 +1,5 @@
 import pygame
 import socket
-import time
-
-
 
 screenx = 0
 screeny = 0
@@ -11,6 +8,9 @@ ready = False
 ready1 = 0
 
 pygame.init()
+pygame.display.set_caption("Pong")
+icon = pygame.image.load("icon.bmp")
+pygame.display.set_icon(icon)
 font1 = pygame.font.SysFont('Calibri', 25, True, False)
 clock = pygame.time.Clock()
 
